@@ -12,13 +12,13 @@
     <nav>
         <button class="fas fa-times" onclick="closeNav()"></button>
         <img src="logo.png" alt="">
-        <a href="importancia-agua.html"><i class="fas fa-hand-holding-water"></i><p>A importância da água</p></a>
-        <a href="industria-agricola.html"><i class="fas fa-tractor"></i><p>Uso industrial e agrícola da água</p></a>
-        <a href="falta-agua.html"><i class="fas fa-tint-slash"></i><p>Falta de água</p></a>
-        <a href="economia-agua.html"><i class="fas fa-faucet"></i><p>Economia de água</p></a>
-        <a href="meio-ambiente.html"><i class="fas fa-globe"></i><p>Meio Ambiente</p></a>
-        <a href="acao-social.html"><i class="fas fa-people-carry"></i><p>Ação Social</p></a>
-        <a href="sobre.html"><i class="fas fa-building"></i><p>Sobre a empresa</p></a>
+        <a href="importancia-agua.php"><i class="fas fa-hand-holding-water"></i><p>A importância da água</p></a>
+        <a href="industria-agricola.php"><i class="fas fa-tractor"></i><p>Uso industrial e agrícola da água</p></a>
+        <a href="falta-agua.php"><i class="fas fa-tint-slash"></i><p>Falta de água</p></a>
+        <a href="economia-agua.php"><i class="fas fa-faucet"></i><p>Economia de água</p></a>
+        <a href="meio-ambiente.php"><i class="fas fa-globe"></i><p>Meio Ambiente</p></a>
+        <a href="acao-social.php"><i class="fas fa-people-carry"></i><p>Ação Social</p></a>
+        <a href="sobre.php"><i class="fas fa-building"></i><p>Sobre a empresa</p></a>
     </nav>
     <header class="artigo">
         <img src="" alt="">

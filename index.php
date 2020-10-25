@@ -13,49 +13,49 @@
       <img src="" alt="hero">
    </header>
    <main>
-      <a href="importancia-agua.html">
+      <a href="importancia-agua.php">
           <div class="topico">
              <i class="fas fa-hand-holding-water"></i>
              <span>A importância da água</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="industria-agricola.html">
+      <a href="industria-agricola.php">
           <div class="topico">
              <i class="fas fa-tractor"></i>
              <span>Uso industrial e agrícola da água</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="falta-agua.html">
+      <a href="falta-agua.php">
           <div class="topico">
              <i class="fas fa-tint-slash"></i>
              <span>Falta de água</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="economia-agua.html">
+      <a href="economia-agua.php">
           <div class="topico">
              <i class="fas fa-faucet"></i>
              <span>Economia de água</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="meio-ambiente.html">
+      <a href="meio-ambiente.php">
           <div class="topico">
              <i class="fas fa-globe"></i>
              <span>Meio Ambiente</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="acao-social.html">
+      <a href="acao-social.php">
           <div class="topico">
              <i class="fas fa-people-carry"></i>
              <span>Ação Social</span>
              <i class="fas fa-chevron-right"></i>
           </div>
       </a>
-      <a href="sobre.html">
+      <a href="sobre.php">
           <div class="topico">
              <i class="fas fa-building"></i>
              <span>Sobre a empresa</span>
