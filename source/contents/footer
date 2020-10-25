@@ -1,0 +1,13 @@
+   <footer>
+      <hr>
+      <a class="login" href="#">Consultar consumo de água</a>
+      <img src="#logo#" alt="">
+      <h6>© Todos o direitos reservados alunos Unicesumar 2020</h6>
+      <h4>Nas redes sociais</h4>
+      <div class="social">
+         <a href=""><i class="fab fa-linkedin"></i></a>
+         <a href=""><i class="fab fa-twitter-square"></i></a>
+         <a href=""><i class="fab fa-facebook-square"></i></a>
+         <a href=""><i class="fab fa-instagram-square"></i></a>
+      </div>
+   </footer>

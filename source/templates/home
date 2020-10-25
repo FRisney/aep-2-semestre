@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+#HEAD#
+<body>
+   <header>
+      <h1>Sanepar:<br>Em tempos de seca</h1>
+      <img src="#hero-img#" alt="#hero-alt#">
+   </header>
+   <main>
+#CONTENT#
+   </main>
+#FOOTER#
+</body>
+</html>
