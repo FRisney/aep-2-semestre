@@ -4,7 +4,7 @@
 <body>
    <header>
       <h1>Sanepar:<br>Em tempos de seca</h1>
-      <img src="#hero-img#" alt="#hero-alt#">
+      <img src="resource/rio-seco.jpeg" alt="hero image">
    </header>
    <main>
 #CONTENT#
