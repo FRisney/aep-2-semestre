@@ -2,25 +2,63 @@
 
 require "source/classes/Pagina.php";
 
-$pagina = array('tipo'=>'','caminho'=>'');
-// echo '<pre>';
-foreach (new DirectoryIterator('source/contents/') as $arquivo) {
-    if($arquivo->isDot()) continue;
-    // echo $arquivo->getBasename() . PHP_EOL;
-    if (substr($_SERVER['REQUEST_URI'], 1) == $arquivo->getBasename())
-    {
-        // echo substr($_SERVER['REQUEST_URI'], 1);
-        $pagina['caminho'] = 'source/contents/' . $arquivo->getBasename();
-        $pagina['tipo'] = 'source/templates/artigo';
-    } else if ($_SERVER['REQUEST_URI'] == '/')
-    {
-        $pagina['caminho'] = 'source/contents/home';
-        $pagina['tipo'] = 'source/templates/home';
-    }
+$pagina = null;
+$template = '';
+$view = substr($_SERVER['REQUEST_URI'], 1);
+$contents = [];
+
+switch ($view)
+{
+case 'acao-social':
+    $template = 'artigo';
+    $contents['titulo'] = 'Problema Social em Curitiba';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'economia-agua':
+    $template = 'artigo';
+    $contents['titulo'] = 'Dicas para economia de água em Curitiba';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'falta-agua':
+    $template = 'artigo';
+    $contents['titulo'] = 'Falta de água';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'importancia-agua':
+    $template = 'artigo';
+    $contents['titulo'] = 'A importância da água';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'industria-agricola':
+    $template = 'artigo';
+    $contents['titulo'] = 'Uso industrial e agrícola da água';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'meio-ambiente':
+    $template = 'artigo';
+    $contents['titulo'] = 'O Meio Ambiente';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+case 'sobre':
+    $template = 'artigo';
+    $contents['titulo'] = 'Sobre a empresa';
+    $contents['header-img'] = '';
+    $contents['header-alt'] = '';
+    break;
+default:
+    $template = 'home';
+    $view = 'home';
+    $contents['titulo'] = 'Home';
+    $contents['hero-img'] = '';
+    $contents['hero-alt'] = '';
 }
 
-$pagina = new Pagina($pagina['tipo'], $pagina['caminho']);
-// https://kit.fontawesome.com/924c78097a.js
-// echo $_SERVER['REQUEST_URI'];
-// echo '</pre>';
+$pagina = new Pagina($template, $view, $contents);
+
 $pagina->mostrarPagina();

@@ -6,19 +6,15 @@ class Pagina
     public $template;
     public $contents;
 
-    public function __construct(string $templatePath, string $mainPath)
+    public function __construct(string $template, string $main, array $contents)
     {
-        $this->main = $mainPath;
-        $this->template = $templatePath;
-        $this->contents['stylecss'] = 'source/css/style.css';
-        $this->contents['sidebarjs'] = 'source/js/sidebar.js';
-        $this->contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
-        $this->contents['logo'] = 'resource/logo.png';
-    }
-
-    public function set_contents(string $content, string $valor)
-    {
-        $this->contents[$content] = $valor;
+        $this->main = 'source/contents/' . $main;
+        $this->template = 'source/templates/' . $template;
+        $contents['stylecss'] = 'source/css/style.css';
+        $contents['sidebarjs'] = 'source/js/sidebar.js';
+        $contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
+        $contents['logo'] = 'resource/logo.png';
+        $this->contents = $contents;
     }
 
     public function mostrarPagina()
