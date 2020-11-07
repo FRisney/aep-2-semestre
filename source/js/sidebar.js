@@ -1,6 +1,6 @@
 /* Open the sidenav */
 function openNav() {
-    document.querySelector("nav").style.width = "90%";
+    document.querySelector("nav").style.width = "100%";
 }
 
 /* Close/hide the sidenav */

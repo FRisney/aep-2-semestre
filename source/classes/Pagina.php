@@ -10,8 +10,8 @@ class Pagina
     {
         $this->main = 'source/contents/' . $main;
         $this->template = 'source/templates/' . $template;
-        $contents['stylecss'] = 'style.css';
-        $contents['sidebarjs'] = 'sidebar.js';
+        $contents['stylecss'] = 'source/css/style.css';
+        $contents['sidebarjs'] = 'source/js/sidebar.js';
         $contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
         $contents['logo'] = 'logo.png';
         $this->contents = $contents;

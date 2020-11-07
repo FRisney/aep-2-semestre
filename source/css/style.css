@@ -43,6 +43,7 @@ main {
 main > img {
     width: 100vw;
     margin: 25px 0;
+    box-shadow: 0 0 8px 4px black;
 }
 
 .topico {
@@ -196,8 +197,6 @@ nav {
     flex-direction: column;
     background: linear-gradient(180deg, #0B1A31 34.9%, #000814 83.33%), #091321;
     justify-content: space-evenly;
-    box-shadow: 20px 0px 20px 0px #000814;
-    /* transition: 0.2s; */
 }
 
 nav img {
