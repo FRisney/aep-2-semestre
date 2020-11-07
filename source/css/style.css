@@ -15,28 +15,34 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header > img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-}
-
 header > h1 {
-    padding: 40px;
-    height: 100%;
+    padding: 40px 40px 0px 40px;
+    height: calc(100% - 40px);
     font-family: 'Yeseva One', sans-serif;
     font-size: 2.6em;
     font-weight: 400;
-    color: #9BD5FF;
+    background-color: #00081444;
 }
 
 header {
     margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0px #000000;
+    height: 80vw;
+}
+
+.hero {
+    background-position: 30% 8%;
 }
 
 main {
     margin: 20px 0px;
+}
+
+main > img {
+    width: 100vw;
+    margin: 25px 0;
 }
 
 .topico {
@@ -81,9 +87,7 @@ footer .login {
     background: linear-gradient(91.84deg, #4B82D3 0%, #1999A2 100%);
     border-radius: 5px;
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: white;
 }
 
 footer img {
@@ -121,9 +125,12 @@ h2 {
     font-family: 'Yeseva One', sans-serif;
     font-size: 2em;
     font-weight: normal;
-    color: #9BD5FF;
+    color: white;
+    background-color: #00081444;
     text-align: center;
-    margin: 35px 30px;
+    padding: 70px 30px;
+    height: calc(100% - 140px);
+    text-shadow: 0 0 10px black;
 }
 
 h3 {
@@ -148,7 +155,6 @@ p {
     margin: 10px 30px;
     text-align: justify;
     text-indent: 1.25em;
-    font-size: 1.15em;
     line-height: 1.5em;
 }
 

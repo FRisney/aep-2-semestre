@@ -1,10 +1,10 @@
-        <h2>A importância da água</h2>
         <h3>Para o planeta:</h3>
         <p> A água está relacionada não só com o surgimento de vida na Terra, mas também com a sua evolução. Quando o planeta é visto do espaço, o azul se sobressai pela enorme quantidade de água no planeta, já que cerca de 70% da superfície é coberta por água.  Entretanto, a maior parte da água no planeta é salgada. Há apenas 2,7% de água doce e, desse percentual, apenas 0,1% corresponde à água doce disponível para utilização.</p>
         <h3>Ciclo da água:</h3>
         <p>Cerca de dois terços da superfície da Terra são cobertos pela água, em estado líquido (oceanos mares, lagos, rios e água subterrâneas) ou em estado sólido (geleiras e neve).</p>
         <p>Uma parcela significativa dessas águas encontram-se em permanente circulação, sob a ação do calor do sol e dos ventos. Essas águas se transformam em vapor, constituindo o chamado ciclo da água ou ciclo hidrográfico. A importância do ciclo hidrográfico é vital para a biosfera, o conjunto dos seres vivos da Terra e os seus habitats.</p>
         <p>Parte do vapor de água é produzido também pela transpiração dos organismos vegetais e animais. Para exemplificar, note que num só dia, uma árvore de grande porte pode chegar a evaporar até 300 litros de água. Nas partes mais altas, a atmosfera fica tão fria que o vapor se condensa em pequenas gotas de água, flocos de neve e cristais de gelo, que formam as nuvens. Ao serem levadas pelo vento para regiões mais frias, ocorrem as precipitações de chuva, neve ou granizo.</p>
+        <img src="ciclo-agua.jpeg" alt="">
         <p>Se no momento da precipitação as camadas inferiores da atmosfera estão mais quentes, a água cai em forma de chuva. Se a temperatura perto da superfície estiver abaixo de zero, a precipitação se dará sob a forma de neve ou granizo.</p>
         <h3>Para os seres vivos:</h3>
         <p>A água é a fonte de vida de todos os seres vivos. Por isso, nas expedições em outros planetas, a água é um dos primeiros recursos procurados, pois pode ser um indicador da existência de vida.</p>
@@ -15,6 +15,7 @@
             <li>Regular o clima do planeta</li>
         </ul>
         <p>Na Terra existem vários ecossistemas e as diferentes formas de vida são dependentes da água. A água está presente em grande quantidade nos mais diversos seres existentes no meio ambiente, ou seja, ela é um bem comum.</p>
+        <img src="animais.jpeg" alt="">
         <p>Alimentos são ricos em água, como a alface que a tem em 95% da sua composição.  Dependendo da espécie, a água-viva possui até 98% de água no seu corpo. Há também os seres microscópicos, como as bactérias que possuem até 75% de água na sua composição.</p>
         <h3>Para os seres humanos:</h3>
         <p>Os seres humanos utilizam a água não só para beber, mas também para realizar uma grande quantidade de atividades.</p>
@@ -25,6 +26,7 @@
             <li>Consumo: a água é essencial, por exemplo, para limpeza, higiene e cozimento de alimentos.</li>
         </ul>
         <p>Vale lembrar também que a distribuição da água pelo planeta não é regular. Em muitos lugares ela é escassa, dificultando a ocupação do espaço e o seu aproveitamento pelo homem.</p>
+        <img src="pessoa.jpeg" alt="">
         <h3>Para o corpo humano:</h3>
         <p>A água é fundamental para o bom funcionamento do organismo, pois desempenha diversas funções.</p>
         <p>Veja a seguir as principais funções da água no organismo e como elas são importantes para o corpo humano.</p>

@@ -14,8 +14,8 @@
        <a href="acao-social"><i class="fas fa-people-carry"></i><p>Ação Social</p></a>
        <a href="sobre"><i class="fas fa-building"></i><p>Sobre a empresa</p></a>
    </nav>
-    <header class="artigo">
-        <img src="#header-img#" alt="#header-alt#">
+   <header style="background-image:url('#header-img#');">
+       <h2>#titulo#</h2>
     </header>
    <main>
 #CONTENT#
