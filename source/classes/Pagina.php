@@ -13,7 +13,7 @@ class Pagina
         $contents['stylecss'] = 'source/css/style.css';
         $contents['sidebarjs'] = 'source/js/sidebar.js';
         $contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
-        $contents['logo'] = 'logo.png';
+        $contents['logo'] = 'resource/logo.png';
         $this->contents = $contents;
     }
 
