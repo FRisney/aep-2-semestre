@@ -1,6 +1,6 @@
 <?php
 
-require "source/classes/Pagina.php";
+require "classes/Pagina.php";
 
 $pagina = null;
 $template = '';

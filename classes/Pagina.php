@@ -8,19 +8,19 @@ class Pagina
 
     public function __construct(string $template, string $main, array $contents)
     {
-        $this->main = 'source/contents/' . $main;
-        $this->template = 'source/templates/' . $template;
-        $contents['stylecss'] = 'source/css/style.css';
-        $contents['sidebarjs'] = 'source/js/sidebar.js';
+        $this->main = 'contents/' . $main;
+        $this->template = 'templates/' . $template;
+        $contents['stylecss'] = 'css/style.css';
+        $contents['sidebarjs'] = 'js/sidebar.js';
         $contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
-        $contents['logo'] = 'resource/logo.png';
+        $contents['logo'] = 'images/logo.png';
         $this->contents = $contents;
     }
 
     public function mostrarPagina()
     {
-        $head = file_get_contents("source/contents/head");
-        $footer = file_get_contents("source/contents/footer");
+        $head = file_get_contents("contents/head");
+        $footer = file_get_contents("contents/footer");
         $pagina = file_get_contents($this->template);
         $content = file_get_contents($this->main);
         $pagina = str_replace('#HEAD#', $head, $pagina);
