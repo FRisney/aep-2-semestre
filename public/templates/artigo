@@ -5,7 +5,7 @@
    <button class="fas fa-bars" onclick="openNav()"></button>
    <nav>
        <button class="fas fa-times" onclick="closeNav()"></button>
-       <img src="#logo#" alt="">
+       <img src="#logo#" alt="" cursor="pointer" onclick="document.location.href='/'">
        <a href="importancia-agua"><i class="fas fa-hand-holding-water"></i><p>A importância da água</p></a>
        <a href="industria-agricola"><i class="fas fa-tractor"></i><p>Uso industrial e agrícola da água</p></a>
        <a href="falta-agua"><i class="fas fa-tint-slash"></i><p>Falta de água</p></a>
