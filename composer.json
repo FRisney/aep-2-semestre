@@ -1,6 +1,6 @@
 {
     "name": "aep/aep",
-    "require": {
+    "require-dev": {
         "heroku/heroku-buildpack-php": "^183.0"
     }
 }
