@@ -8,7 +8,7 @@ class Pagina
 
     public function __construct(string $template, string $main, array $contents)
     {
-        $this->main = 'contents/' . $main;
+        $this->main = 'pages/' . $main;
         $this->template = 'templates/' . $template;
         $contents['stylecss'] = '/css/style.css';
         $contents['sidebarjs'] = '/js/sidebar.js';

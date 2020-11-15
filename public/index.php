@@ -62,6 +62,9 @@ case 'sobre':
     $contents['header-alt'] = '';
     $contents['img1'] = $img_path."sanepar-aerea.jpeg";
     break;
+case 'consultar-consumo':
+    header('Location: /consultar-consumo.php');
+    break;
 case 'home':
     $template = 'home';
     $view = 'home';

@@ -1,6 +1,6 @@
    <footer>
       <hr>
-      <a class="login" href="#">Consultar consumo de água</a>
+      <a class="login" href="/consultar-consumo">Consultar consumo de água</a>
       <img src="#logo#" alt="">
       <h6>© Todos o direitos reservados<br>alunos Unicesumar 2020</h6>
       <h4>Nas redes sociais</h4>
