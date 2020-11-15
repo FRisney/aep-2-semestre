@@ -5,7 +5,7 @@ require "classes/Pagina.php";
 $pagina = null;
 $template = '';
 $view = substr($_SERVER['REQUEST_URI'], 1);
-$img_path = 'images/';
+$img_path = '/images/';
 $contents = [];
 
 switch ($view)
@@ -15,7 +15,7 @@ case 'acao-social':
     $contents['titulo'] = 'Problema Social em Curitiba';
     $contents['header-img'] = $img_path."morador-rua-1.jpeg";
     $contents['header-alt'] = '';
-    $contents['img1'] = "morador-rua-2.jpeg";
+    $contents['img1'] = $img_path."morador-rua-2.jpeg";
     break;
 case 'economia-agua':
     $template = 'artigo';
@@ -62,12 +62,15 @@ case 'sobre':
     $contents['header-alt'] = '';
     $contents['img1'] = $img_path."sanepar-aerea.jpeg";
     break;
-default:
+case 'home':
     $template = 'home';
     $view = 'home';
     $contents['titulo'] = 'Home';
     $contents['hero-img'] = $img_path."rio-seco.jpeg";
     $contents['hero-alt'] = 'hero image';
+    break;
+default:
+    header('Location: /home');
 }
 
 $pagina = new Pagina($template, $view, $contents);
