@@ -19,13 +19,9 @@ class Pagina
 
     public function mostrarPagina()
     {
-        $head = file_get_contents("templates/head");
-        $footer = file_get_contents("templates/footer");
-        $pagina = file_get_contents($this->template);
-        $content = file_get_contents($this->main);
-        $pagina = str_replace('#HEAD#', $head, $pagina);
-        $pagina = str_replace('#FOOTER#', $footer, $pagina);
-        $pagina = str_replace('#CONTENT#', $content, $pagina);
+        $pagina = str_replace('#HEAD#', file_get_contents("templates/head"), file_get_contents($this->template));
+        $pagina = str_replace('#FOOTER#', file_get_contents("templates/footer"), $pagina);
+        $pagina = str_replace('#CONTENT#', file_get_contents($this->main), $pagina);
         foreach ($this->contents as $key => $value)
         {
             $pagina = str_replace("#$key#", $value, $pagina);

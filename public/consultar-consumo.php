@@ -16,7 +16,7 @@ echo getenv("DATABASE_URL").PHP_EOL;
 print_r($db);
 echo "</pre>";
 
-$query = $pdo->query("select * from fornecedor;");
+$query = $pdo->query("select * from regiao;");
 
 echo "<pre>";
 print_r($query);
@@ -27,4 +27,13 @@ $result = $query->fetchAll();
 echo "<pre>";
 print_r($result);
 echo "</pre>";
+
+
+$query = $pdo->query("select * from consumo;");
+$result = $query->fetchAll();
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+
 

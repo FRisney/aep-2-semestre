@@ -1,8 +1,10 @@
 <?php
 
 require "classes/Pagina.php";
+require "classes/DB.php";
 
 $pagina = null;
+$db = null;
 $template = '';
 $view = substr($_SERVER['REQUEST_URI'], 1);
 $img_path = '/images/';
@@ -63,7 +65,7 @@ case 'sobre':
     $contents['img1'] = $img_path."sanepar-aerea.jpeg";
     break;
 case 'consultar-consumo':
-    header('Location: /consultar-consumo.php');
+    $db = new DB();
     break;
 case 'home':
     $template = 'home';
@@ -76,6 +78,13 @@ default:
     header('Location: /home');
 }
 
+if (isset($db)) {
+    $db->getConsumo('Centro');
+    $db->mostrarPagina();
+} else {
+
 $pagina = new Pagina($template, $view, $contents);
 
 $pagina->mostrarPagina();
+
+}

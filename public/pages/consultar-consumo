@@ -1,0 +1,12 @@
+<script></script>
+<table>
+    <thead>
+        <th>Data</th>
+        <th>Mínima</th>
+        <th>Média</th>
+        <th>Máxima</th>
+    </thead>
+    <tbody>
+        #consumo#
+    </tbody>
+</table>
