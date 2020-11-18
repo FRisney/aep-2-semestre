@@ -1,4 +1,25 @@
 <script></script>
+<form method="POST">
+    <select id="regiao" name="regiao">
+        <option value="1">Centro</option>
+        <option value="2">Batel</option>
+        <option value="3">Bigorrilho</option>
+        <option value="4">Ahú</option>
+        <option value="5">Boa Vista</option>
+        <option value="6">Cabral</option>
+        <option value="7">Mercês</option>
+        <option value="8">Água Verde</option>
+        <option value="9">Bacacheri</option>
+        <option value="10">Jardim Botanico</option>
+        <option value="11">Boqueirão</option>
+        <option value="12">Hauer</option>
+        <option value="13">Pinheirinho</option>
+        <option value="14">Portão</option>
+        <option value="15">Santa Felicidade</option>
+        <option value="16">Santa Cândida</option>
+    </select>
+    <input type="submit">
+</form>
 <table>
     <thead>
         <th>Data</th>

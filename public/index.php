@@ -79,7 +79,7 @@ default:
 }
 
 if (isset($db)) {
-    $db->getConsumo('Centro');
+    $db->getConsumo(isset($_POST['regiao'])?$_POST['regiao']:1);
     $db->mostrarPagina();
 } else {
 

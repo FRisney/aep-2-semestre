@@ -28,11 +28,8 @@ class DB extends Pagina
 
     public function getConsumo($regiao)
     {
-        $query1 = $this->pdo->prepare('select id from regiao where nome = ?;');
-        $query1->execute(array($regiao));
-        $result1 = $query1->fetch();
-        $query2 = $this->pdo->prepare('select * from consumo where fk_regiao_id = ? order by data desc;');
-        $query2->execute(array($result1['id']));
+        $query2 = $this->pdo->prepare('select to_char(data, \'DD/MM/YYYY\') as "data", min, max, avg from consumo where fk_regiao_id = ? order by data desc;');
+        $query2->execute(array($regiao));
         $result = $query2->fetchAll();
         $this->contents['consumo'] = $result;
     }
@@ -57,7 +54,6 @@ class DB extends Pagina
                         $consumo .= str_replace('#max#', $linha['max'], $dados);
                     }
                 }
-
             }else
                 $pagina = str_replace("#$key#", $value, $pagina);
         }
