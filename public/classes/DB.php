@@ -28,10 +28,18 @@ class DB extends Pagina
 
     public function getConsumo($regiao)
     {
-        $query2 = $this->pdo->prepare('select to_char(data, \'DD/MM/YYYY\') as "data", min, max, avg from consumo where fk_regiao_id = ? order by data desc;');
-        $query2->execute(array($regiao));
-        $result = $query2->fetchAll();
-        $this->contents['consumo'] = $result;
+        $q = $this->pdo->prepare('select to_char(data, \'DD/MM/YYYY\') as "data", min, max, avg from consumo where fk_regiao_id = ? order by data desc;');
+        $q->execute(array($regiao));
+        $r = $q->fetchAll();
+        $this->contents['consumo'] = $r;
+        $this->contents['cons-sem'] = '[';
+        $this->contents['cons-dia'] = '[';
+        for ($i=7; $i >= 0; $i--) {
+            $this->contents['cons-sem'] .= $r[$i]['avg'].',';
+            $this->contents['cons-dia'] .= '"'.$r[$i]['data'].'",';
+        }
+        $this->contents['cons-dia'] .= ']';
+        $this->contents['cons-sem'] .= ']';
     }
 
     public function mostrarPagina()

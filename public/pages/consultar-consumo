@@ -1,4 +1,23 @@
-<script></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+<canvas id="MyChart"></canvas>
+<script>
+var ctx = document.getElementById("MyChart");
+
+var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: #cons-dia#,
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'green',
+            borderColor: 'rgb(255, 99, 132)',
+            data: #cons-sem#
+    }]}
+});
+
+chart.fillStyle = "red";
+</script>
 <form method="POST">
     <select id="regiao" name="regiao">
         <option value="1">Centro</option>
