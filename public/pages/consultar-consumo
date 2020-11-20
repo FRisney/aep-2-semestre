@@ -1,6 +1,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
-<canvas id="MyChart"></canvas>
+<div>
+    <canvas id="MyChart"></canvas>
+</div>
 <script>
 var ctx = document.getElementById("MyChart");
 
@@ -9,14 +11,23 @@ var chart = new Chart(ctx, {
     data: {
         labels: #cons-dia#,
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'green',
-            borderColor: 'rgb(255, 99, 132)',
+            label: 'Consumo Médio',
+            backgroundColor: '#091C36',
+            borderColor: '#5A93D8',
+            cubicInterpolationMode: 'default',
             data: #cons-sem#
-    }]}
+    }]},
+    options: {
+        layout: {
+            padding: {
+                left: 30,
+                right: 30,
+                top: 0,
+                bottom: 0
+            }
+        }
+    }
 });
-
-chart.fillStyle = "red";
 </script>
 <form method="POST">
     <select id="regiao" name="regiao">
@@ -37,7 +48,7 @@ chart.fillStyle = "red";
         <option value="15">Santa Felicidade</option>
         <option value="16">Santa Cândida</option>
     </select>
-    <input type="submit">
+    <button type="submit"><i class="fas fa-search"></i></button>
 </form>
 <table>
     <thead>

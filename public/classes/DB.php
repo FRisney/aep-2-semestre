@@ -14,6 +14,7 @@ class DB extends Pagina
         $this->contents['fontawesome'] = 'https://kit.fontawesome.com/924c78097a.js';
         $this->contents['logo'] = 'images/logo.png';
         $this->contents['titulo'] = 'Consulta';
+        $this->contents['header-img'] = '/images/procura.jpeg';
         $this->conn = parse_url(getenv("DATABASE_URL"));
         $this->pdo = new PDO("pgsql:" . sprintf(
             "host=%s;port=%s;user=%s;password=%s;dbname=%s",
@@ -45,7 +46,7 @@ class DB extends Pagina
     public function mostrarPagina()
     {
         $pagina = str_replace('#HEAD#', file_get_contents("templates/head"), file_get_contents($this->template));
-        $pagina = str_replace('#FOOTER#', file_get_contents("templates/footer"), $pagina);
+        $pagina = str_replace('#FOOTER#', '', $pagina);
         $pagina = str_replace('#CONTENT#', file_get_contents($this->main), $pagina);
         $consumo = '';
         foreach ($this->contents as $key => $value)

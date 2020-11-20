@@ -3,9 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
     text-decoration: none;
     transition: 0.2s;
+}
+
+a * {
+    color: white;
 }
 
 body {
@@ -82,13 +85,14 @@ footer hr {
     border: 1px solid #091C36;
 }
 
-footer .login {
+footer .consulta {
     margin: 40px 0px 20px 0px;
     padding: 11px 15px;
     background: linear-gradient(91.84deg, #4B82D3 0%, #1999A2 100%);
     border-radius: 5px;
     font-size: 1em;
     font-weight: bold;
+    color: white;
 }
 
 footer img {
@@ -183,6 +187,7 @@ button.fa-bars {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: 0px;
+    color: white;
 }
 
 nav {
@@ -235,4 +240,52 @@ nav button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: 0px;
+    color: white;
+}
+
+table {
+    width: calc(100% - 60px);
+    margin: 30px;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px 5px;
+}
+
+td {
+    border-top: solid 1px #264973;
+}
+
+form {
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+form > *{
+    border: none;
+    color: white;
+}
+
+form button {
+    padding: 15px;
+    border: solid #5A93D8 1px;
+    background-color: #5A93D8;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+form select {
+    flex-grow: 1;
+    padding: 15px 10px;
+    background-color: #091C36;
+    border: solid #5A93D8 1px;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+option {
+    color: black;
 }
